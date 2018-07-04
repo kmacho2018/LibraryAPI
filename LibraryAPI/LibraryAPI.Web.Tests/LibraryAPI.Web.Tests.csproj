@@ -98,9 +98,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BookControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
-    <Compile Include="Controllers\ValuesControllerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -109,10 +109,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LibraryAPI.Model\LibraryAPI.Model.csproj">
+      <Project>{fb11dfae-02fd-40a7-a3c6-b0245246e562}</Project>
+      <Name>LibraryAPI.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LibraryAPI.Web\LibraryAPI.Web.csproj">
       <Project>{289289FC-1C1F-4A98-8A2D-37408210C42C}</Project>
       <Name>LibraryAPI.Web</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

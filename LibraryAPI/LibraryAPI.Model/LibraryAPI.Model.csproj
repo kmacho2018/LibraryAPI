@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,20 +49,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DB\Autor.cs" />
-    <Compile Include="DB\AutorConfiguration.cs" />
-    <Compile Include="DB\Book.cs" />
-    <Compile Include="DB\BookConfiguration.cs" />
-    <Compile Include="DB\BookFormat.cs" />
-    <Compile Include="DB\BookFormatConfiguration.cs" />
-    <Compile Include="DB\BookPage.cs" />
-    <Compile Include="DB\BookPageConfiguration.cs" />
-    <Compile Include="DB\BookState.cs" />
-    <Compile Include="DB\BookStateConfiguration.cs" />
-    <Compile Include="DB\ILibraryDbContext.cs" />
-    <Compile Include="DB\LibraryDbContext.cs" />
-    <Compile Include="DB\LibraryDbContextFactory.cs" />
+    <Compile Include="Models\Autor.cs" />
+    <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\BookFormat.cs" />
+    <Compile Include="Models\BookPage.cs" />
+    <Compile Include="Models\BookState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Abstract\IBookRepository.cs" />
+    <Compile Include="Repository\Concrete\BookRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
